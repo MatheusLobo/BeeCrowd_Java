@@ -2,23 +2,20 @@ package beeCrowd;
 
 import java.util.Scanner;
 public class FibonacciFacil_1151 {
-    public static void main(String[] args) {
-        int fib0 = 0, fib1 = 1;
-        int fib2 = 0, n;
-        Scanner read = new Scanner(System.in);
-        n = read.nextInt();
-
-        while (n != 0) {
-            System.out.print(fib0);
-            fib2 = fib1 + fib0;
-            fib0 = fib1;
-            fib1 = fib2;
-            if (n != 1) {
-                System.out.print(" ");
-            }
-            n--;
-        }
-
-        read.close();
-    }
-}
+	    public static void main(String[] args) {
+	        Scanner read = new Scanner(System.in);
+	        int n = read.nextInt();
+	        int a=0;
+	        int b=1;
+	        for (int i=0;i<n;i++) {
+	            if (i>0) {
+	                System.out.print(" ");
+	            }
+	            System.out.print(a);
+	            int temp=a+b;
+	            a=b;
+	            b=temp;
+	        }
+	        System.out.println();
+	    }
+	  }
