@@ -5,23 +5,27 @@ import java.util.Scanner;
 public class Linha_matriz_1181 {
 
 	public static void main(String[] args) {
+		double[][] m = new double[12][12];
+		int lin;
+		double opera=0;;
+		String alt;
+		Scanner read = new Scanner(System.in);
+		lin=read.nextInt();
+		alt=read.next();
 		
-		float[][] mt = new float[12][12];
-		int n,soma=0;
-		String ch;
-		Scanner read = new Scanner (System.in);
-		n= read.nextInt();
-		ch=read.next();
-		for (int coluna=0;coluna<mt[n].length;coluna++) {
-			mt[n][coluna]=read.nextFloat();
-			soma+=coluna;
+		for (int i=0; i<12;i++) {
+			m[lin][i]=read.nextDouble();
+			opera=opera+m[lin][i];
 		}
-		if (ch=="S"||ch=="s") {
-			System.out.println(soma);
+		
+		if (alt.equals("S")) {
+			System.out.printf("%.1f", opera);
 		}
-		if (ch=="M"||ch=="m") {
-		System.out.println(soma/12);
+		if (alt.equals("M")) {
+			System.out.printf("%.1f", opera/12);
+		}
+		
 		
 	}
 
-}}
+}
