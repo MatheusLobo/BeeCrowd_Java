@@ -1,5 +1,5 @@
 package beeCrowd;
 
-public class Teste {
+public class Teste1 {
 
 }
