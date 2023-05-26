@@ -2,7 +2,7 @@ package beeCrowd;
 
 import java.util.Scanner;
 
-public class Acima_da_diagonal_secundaria_1185 {
+public class Area_Inferior_1188 {
 
 	public static void main(String[] args) {
 		double[][] m = new double[12][12];
@@ -16,7 +16,7 @@ public class Acima_da_diagonal_secundaria_1185 {
 		for (int i = 0; i <12; i++) {
 			for (int j = 0; j <12; j++) {
 				m[i][j] = read.nextDouble();
-				if (j < (11 - i))  { 
+			 if (j<i && j >(11 - i))  { 
 					opera += m[i][j];
                     elementos++;
                 }}
