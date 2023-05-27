@@ -1,5 +1,4 @@
 package beeCrowd;
-
 import java.util.Scanner;
 
 
