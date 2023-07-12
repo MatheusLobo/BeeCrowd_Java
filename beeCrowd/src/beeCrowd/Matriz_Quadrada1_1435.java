@@ -12,7 +12,7 @@ public class Matriz_Quadrada1_1435 {
 			while (x>=0) {
 				System.out.println(x);
 				x=x-1;
-				
+				vb
 			}
 			
 		}
